@@ -1,8 +1,10 @@
 $(document).ready(
-    $('.saveBtn').on('click'.function() {
+    $('.saveBtn').on('click', function() {
 
-        let value = $(this)
-
+        let value = $(this).siblings('.description').val()
+        let time = $(this).parent().attr('id')
+    
+        localStorage.setItem(time, value)
     }
     )
 
