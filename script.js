@@ -17,6 +17,6 @@ $(document).ready(
  $("#hour-16 .description").val(localStorage.getItem("hour-16")),
  $("#hour-17 .description").val(localStorage.getItem("hour-17")),
 
- $("#currentDay").text (dayjs().format(D MMM YYY)),
+ $("#currentDay").text (dayjs().format("D MMM YYY")),
 
 )
